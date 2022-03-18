@@ -1,0 +1,326 @@
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --main-back-color: rgba(255, 255, 255, 1);
+    --main-hover-focus-font-color: rgba(33, 150, 243, 1);
+    --button-hover-focus-back-color: rgba(33, 150, 243, 1);
+    --button-hover-focus-font-color: rgba(255, 255, 255, 1);
+    --another-back-color: rgba(245, 244, 250, 1);
+    --button-font-color: rgba(33, 33, 33, 1);
+    --button-back-color: rgba(245, 244, 250, 1);
+    --footer-font-color: rgba(255, 255, 255, 0.6);
+    --footer-hover-focus-color: rgba(33, 150, 243, 1);
+
+}
+body {
+    background-color: var(--main-back-color);
+    color: rgba(117, 117, 117, 1);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h2,
+h3 {
+    color: rgba(33, 33, 33, 1);
+    font-weight: 700;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: rgba(33, 33, 33, 1);
+}
+/* Верхняя линия */
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    outline: 2px solid tomato;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+}
+.span-l {
+    color: var(--main-hover-focus-font-color);
+}
+
+.studio,
+.portfolio,
+.contacts {
+    color: rgba(33, 33, 33, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    outline: 2px solid tomato;
+}
+
+.studio:hover,
+.studio:focus,
+.portfolio:hover,
+.portfolio:focus,
+.contacts:hover,
+.contacts:focus,
+.mail:hover,
+.mail:focus,
+.fone:hover,
+.fone:focus {
+    color: var(--main-hover-focus-font-color);
+}
+.studio-activ {
+    color: var(--main-hover-focus-font-color)
+}
+.item {
+    margin-left: 50px;
+}
+.auto-margin {
+    margin-left: auto;
+}
+
+.mail,
+.fone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(117, 117, 117, 1);
+    outline: 2px solid tomato;
+}
+.gray-border {
+    border-top: 1px solid #ECECEC;
+}
+/* Шапка */
+.hero {
+    max-width: 1600px;
+    background-color: rgba(47, 48, 58, 1);
+    margin-bottom: 94px;
+}
+/* .container-break {
+    max-width: 1600px;
+    margin: 0;
+    padding: 0;
+} */
+.ferst-header {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 200px;
+    margin-top: 0;
+    margin-left: 260px;
+    
+} 
+.hero-button {
+    display: inline-block;
+    padding: 10px 32px;
+    background-color: var(--button-hover-focus-back-color);
+    border-radius: 4px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    color: var(--button-hover-focus-font-color);
+    margin-left: 500px;
+    margin-bottom: 200px;
+}
+.hero-button:hover,
+.hero-button:focus {
+    cursor: pointer;
+}
+/* Особенности */
+.desapear {
+    color: var(--main-back-color);
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+.space-peculiar {
+    justify-content: space-between;
+}
+.peculiar-header {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.peculiar-discribtion {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+    text-align: left;
+    margin-bottom: 0;
+    outline: 2px solid tomato;
+}
+/* Чем мы занимаемся */
+.what-header {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-top: 94px; 
+    margin-bottom: 50px;
+    margin-left: 397px;
+}
+.what-content {
+    margin-bottom: 94px;
+}
+.space {
+    justify-content: space-between;
+}
+/* Наша команда */
+.our-comand {
+    max-width: 1600px;
+    background-color: var(--another-back-color);
+}
+.our-header {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.comand-space {
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+.name {
+    color: var(--button-font-color) ; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    background-color: var(--main-back-color);
+    width: 270px;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+.profesion {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    background-color: var(--main-back-color);
+    width: 270px;
+    margin-top: 0;
+    
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+/* Подвал */
+.footer {
+    max-width: 1600px;
+    background-color: rgba(47, 48, 58, 1);
+}
+.span-f {
+    color: var(--button-hover-focus-font-color);
+}
+.street,
+.footer-mail,
+.footer-fone {
+    color: var(--footer-font-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+.street-color {
+    color: var(--main-back-color);
+}
+.street:hover,
+.street:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-fone:hover,
+.footer-fone:focus {
+    color: var(--footer-hover-focus-color);
+    cursor: pointer;
+}
+/* Верхняя линия портфолио */
+.portfolio-activ {
+    color: var(--main-hover-focus-font-color);
+}
+/* Радиокнопки */
+.btn-space {
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+
+}
+.btn-all,
+.btn-veb,
+.btn-applic,
+.btn-desine,
+.btn-marcet {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--button-font-color);
+    background-color: var(--button-back-color);
+    border-color: #F5F4FA;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.btn-all:hover,
+.btn-all:focus,
+.btn-veb:hover,
+.btn-veb:focus,
+.btn-applic:hover,
+.btn-applic:focus,
+.btn-desine:hover,
+.btn-desine:focus,
+.btn-marcet:hover, 
+.btn-marcet:focus {
+    background-color: var(--button-hover-focus-back-color);
+    color: var(--button-hover-focus-font-color);
+    cursor: pointer;
+} 
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-exampl {
+    width: 370px;
+    outline: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+.header-work-example {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.work-example-discr {
+    font-size: 16px;
+    line-height: 1.88;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-top: 4px;
+}
