@@ -39,6 +39,11 @@ a {
     text-decoration: none;
     color: rgba(33, 33, 33, 1);
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* Верхняя линия */
 .container {
     max-width: 1200px;
@@ -122,6 +127,8 @@ a {
     padding: 0;
 } */
 .ferst-header {
+    /* display: flex;
+    justify-content: center; */
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -154,11 +161,20 @@ a {
     cursor: pointer;
 }
 /* Особенности */
-.desapear {
+/* .desapear {
     color: var(--main-back-color);
     line-height: 0;
     margin: 0;
     padding: 0;
+} */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 .space-peculiar {
     justify-content: space-between;
@@ -195,6 +211,7 @@ a {
 .our-comand {
     max-width: 1600px;
     background-color: var(--another-back-color);
+    
 }
 .our-header {
     font-size: 36px;
@@ -207,6 +224,11 @@ a {
     justify-content: space-between;
     padding-bottom: 94px;
 }
+.our-comand-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .name {
     color: var(--button-font-color) ; 
     font-weight: 500;
@@ -300,7 +322,7 @@ a {
     color: var(--button-hover-focus-font-color);
     cursor: pointer;
 } 
-.flex-grid {
+.portfolio-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
