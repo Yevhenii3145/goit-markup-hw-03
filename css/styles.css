@@ -45,27 +45,27 @@ img {
     height: auto;
 }
 /* Верхняя линия */
+.header {
+    padding: 25px 15px 25px 15px;
+}                                                                                                  
+
 .container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin:0 auto;
+    
 }
 .flex {
     display: flex;
     align-items: center;
-}
+}     
 .logo {
     display: inline-block;
+    margin-right: 93px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    outline: 2px solid tomato;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
 
 }
 .span-l {
@@ -79,7 +79,6 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    outline: 2px solid tomato;
 }
 
 .studio:hover,
@@ -110,37 +109,32 @@ img {
     font-size: 14px;
     line-height: 1.14;
     color: rgba(117, 117, 117, 1);
-    outline: 2px solid tomato;
 }
 .gray-border {
     border-top: 1px solid #ECECEC;
 }
 /* Шапка */
 .hero {
-    max-width: 1600px;
-    background-color: rgba(47, 48, 58, 1);
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-bottom: 94px;
 }
-/* .container-break {
-    max-width: 1600px;
-    margin: 0;
-    padding: 0;
-} */
+.hero-orientation {
+    margin: 0 auto;
+    width: 695px;
+} 
 .ferst-header {
-    /* display: flex;
-    justify-content: center; */
-    text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
+    line-height: 1,36;
+
+
     text-align: center;
-    color: rgba(255, 255, 255, 1);
-    padding-top: 200px;
-    margin-top: 0;
-    margin-left: 260px;
-    
-} 
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 .hero-button {
     display: inline-block;
     padding: 10px 32px;
@@ -153,8 +147,7 @@ img {
     line-height: 1.88;
     text-align: center;
     color: var(--button-hover-focus-font-color);
-    margin-left: 500px;
-    margin-bottom: 200px;
+    margin-left: 247px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -191,7 +184,6 @@ img {
     width: 270px;
     text-align: left;
     margin-bottom: 0;
-    outline: 2px solid tomato;
 }
 /* Чем мы занимаемся */
 .what-header {
@@ -226,7 +218,7 @@ img {
 }
 .our-comand-card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    /* border-radius: 0px 0px 4px 4px; */
 }
 
 .name {
@@ -236,7 +228,7 @@ img {
     line-height: 1.19;
     text-align: center;
     background-color: var(--main-back-color);
-    width: 270px;
+    width: 268px;
     margin-top: 0;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -247,11 +239,13 @@ img {
     line-height: 1.19;
     text-align: center;
     background-color: var(--main-back-color);
-    width: 270px;
+    width: 268px;
     margin-top: 0;
     
     margin-bottom: 0;
     padding-bottom: 30px;
+    /* border-radius: 0px 0px 4px 4px; */
+    
 }
 /* Подвал */
 .footer {
@@ -329,7 +323,7 @@ img {
     align-items: center;
 }
 .cart-exampl {
-    width: 370px;
+    width: 368px;
     outline: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
